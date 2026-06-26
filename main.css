@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #262626;
+    padding-top: 30px;
+}
+
+.container {
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.profile-header {
+    display: flex;
+    margin-bottom: 44px;
+}
+
+.profile-avatar-section {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #dbdbdb;
+    padding: 2px;
+    background: #fff;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info-section {
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+.profile-top-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.username {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+
+
+.profile-stats {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.profile-bio .full-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.profile-bio .category {
+    color: #8e8e8e;
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.profile-bio .bio-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.profile-bio .bio-link {
+    color: #00376b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profile-tabs {
+    border-top: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.tab-item {
+    text-decoration: none;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 18px 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tab-item.active {
+    color: #262626;
+    border-top: 1px solid #262626;
+    margin-top: -1px;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 30px;
+}
+
+.post-item {
+    position: relative;
+    aspect-ratio: 1 / 1; 
+    background-color: #efefef;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.post-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.post-item:hover .post-overlay {
+    opacity: 1;
+}
+.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+
+body.dark {
+    background-color: #000000; 
+    color: #f7f7f7;          
+}
+
+body.dark .main-content {
+    background-color: #444444; 
+}
+
+body.dark .book-cover, body.dark .book-info-box {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+}
